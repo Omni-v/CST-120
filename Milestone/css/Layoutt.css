@@ -1,0 +1,133 @@
+.intro
+{
+     
+  text-align: left;
+  font-weight:300;
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+ color:black; 
+ border-color:rgb(255, 255, 255); 
+ color:rgb(221, 221, 221);  
+ border-style: double;
+ height:fit-content;
+ width:fit-content;
+ background-color: rgb(0, 0, 0);
+
+
+  }
+
+
+.header, footer, article, nav, div {
+  padding: 1.2em;
+  background: none;
+  color: rgb(176, 225, 238); 
+  }
+.snacks
+{
+color:rgb(147, 196, 83);
+margin-left: auto;
+margin-right:auto;
+border-style:solid;
+border-color:rgb(0, 0, 0);
+
+}
+.funFacts
+{
+   border-style:double; 
+   border-color:rgb(255, 255, 255); 
+   background-color: black; 
+    text-align: left;
+    font-weight:300;
+    font-family: 'Nintendo DS BIOS', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+   color:rgb(211, 211, 211);
+ 
+}
+img.align-left
+{
+    float:left;
+    margin-right: 10px;
+    border-style: solid;
+    border-color:rgb(94, 91, 91);
+    width:fit-content;
+    height:auto;
+    
+}
+
+#pageHeader {
+  grid-area: header;
+  text-align: center;
+   font-weight:300;
+   font-family: 'Nintendo DS BIOS', sans-serif;
+   font-size: xx-large;
+   font-weight: bold;
+   border-style: double;
+  }
+#pageFooter {
+  grid-area: footer;
+  grid-row: right;
+   
+  text-align: left;
+  font-weight:300;
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+ color:black; 
+ border-color:rgb(255, 255, 255); 
+ color:rgb(221, 221, 221);  
+
+ height:fit-content;
+ width:fit-content;
+
+   
+   
+  }
+#mainArticle { 
+  grid-area: article; 
+
+  font-family: 'Nintendo DS BIOS', sans-serif;
+ }
+#mainNav { 
+  grid-area: nav;
+  text-align: left;
+  font-weight:300;
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+ color:black; 
+ border-color:rgb(255, 255, 255); 
+ color:rgb(221, 221, 221);  
+ border-style: double;
+ height:fit-content;
+ width:fit-content;
+ background-color: rgb(0, 0, 0); 
+  }
+#siteAds { 
+  grid-area: ads; 
+  grid-row:auto;
+  text-align: left;
+  font-weight:300;
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+ color:black; 
+ border-color:rgb(255, 255, 255); 
+ color:rgb(221, 221, 221);  
+ border-style: double;
+ background-color: rgb(0, 0, 0);
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "ads"
+      "nav"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
+}
