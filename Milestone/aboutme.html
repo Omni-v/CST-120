@@ -2,10 +2,13 @@
 <html lang="en">
 <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 <link href="https://fonts.cdnfonts.com/css/nintendo-ds-bios" rel="stylesheet">
+
 <link rel="stylesheet" type="text/css" href="css/Layoutt.css">
-<link rel="stylesheet" type="text/css" href="css/Icons.css">
 <head> 
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+  
     body{
         background-image:url("images/DarkWoods.jpeg") ;
         display: grid;
@@ -20,22 +23,226 @@
     height: 100vh;
     margin: 0;
     }
+    #pageHeader {
+    width: 70vw;
+    margin: 30vw auto;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 5em;
+    letter-spacing: 8px;
+
+    font-weight: 400;
+    /*Create overlap*/
+    /* move to the center of the page*/
+    position: absolute;
+    top:10%;
+    right:50%;
+    margin: 0;
+    line-height: 0;
+    /*Animation*/
+    
+    animation: glitch1 2.5s infinite;
+  }
+  
+  h1:nth-child(2) {
+    color: #67f3da;
+    animation: glitch2 2.5s infinite;
+  }
+  
+  h1:nth-child(3) {
+    color: #f16f6f;
+    animation: glitch3 2.5s infinite;
+  }
+  /*Keyframes*/
+  
+  @keyframes glitch1 {
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    7% {
+      transform: skew(-0.5deg, -0.9deg);
+      opacity: 0.75;
+    }
+    10% {
+      transform: none;
+      opacity: 1;
+    }
+    27% {
+      transform: none;
+      opacity: 1;
+    }
+    30% {
+      transform: skew(0.8deg, -0.1deg);
+      opacity: 0.75;
+    }
+    35% {
+      transform: none;
+      opacity: 1;
+    }
+    52% {
+      transform: none;
+      opacity: 1;
+    }
+    55% {
+      transform: skew(-1deg, 0.2deg);
+      opacity: 0.75;
+    }
+    50% {
+      transform: none;
+      opacity: 1;
+    }
+    72% {
+      transform: none;
+      opacity: 1;
+    }
+    75% {
+      transform: skew(0.4deg, 1deg);
+      opacity: 0.75;
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes glitch2 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    7% {
+      transform: translate(-2px, -3px);
+      opacity: 0.5;
+    }
+    10% {
+      transform: none;
+      opacity: 0.25;
+    }
+    27% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(-5px, -2px);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    52% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(-5px, -1px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    72% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(-2px, -6px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+  
+  @keyframes glitch3 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    7% {
+      transform: translate(2px, 3px);
+      opacity: 0.5;
+    }
+    10% {
+      transform: none;
+      opacity: 0.25;
+    }
+    27% {
+      transform: none;
+      opacity: 0.25;
+    }
+    30% {
+      transform: translate(5px, 2px);
+      opacity: 0.5;
+    }
+    35% {
+      transform: none;
+      opacity: 0.25;
+    }
+    52% {
+      transform: none;
+      opacity: 0.25;
+    }
+    55% {
+      transform: translate(5px, 1px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: none;
+      opacity: 0.25;
+    }
+    72% {
+      transform: none;
+      opacity: 0.25;
+    }
+    75% {
+      transform: translate(2px, 6px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: none;
+      opacity: 0.25;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+ 
 </style>
 <meta charset="UTF8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> omni's omnious overlook!</title>
+<title> omni</title>
 </head>    
 <body>
-   <header id="pageHeader">  </header>
+   <header> 
+    <header id="pageHeader" style="font: small-caps 150 28px/1'Nintendo DS BIOS', sans-serif"> <h1>Omni's</h1>
+    </header>
    <!--about me post* just some interesting facts-->
    <article id="mainArticle">
     <div class="intro">
-    <p><img src="images/image3.png" class="img.align-left">Meet Omni!</p>
     
+    <p><img src="images/image3.png" style = "float:inline-start">Hello! My name is omni!</p>
+      
+
     <p> I am currently going after a degree in software development at GCU</p>
     <p>This is my website for CST-120. This website was inspired by a friend of mine!</p>
     <p>Here is their website <a href="https://dimden.dev"> <img src="https://dimden.dev/services/images/88x31.gif"></a></p>
-    </div><br/>
+    </div></article><br/>
    <table class="funFacts">
     <tr>
         <th>Fun facts!</th>
@@ -49,12 +256,12 @@
 
    </table>
    
-   </article>
+   
    <!--creates a navigation menu to the other webpages on this site-->
    <nav id="mainNav">
     <p>What to see some more stuff?</p>
     <a class="nes-btn" href="Hobbies.html">Hobbies</a></a><br/>
-    <a class="nes-btn" href="Experiences.html">Experiences</a></a>
+    <a class="nes-btn" href="Photos.html">Experiences</a></a>
    </nav>
    <!---will show prior projects and what not-->
    <div id="siteAds">
